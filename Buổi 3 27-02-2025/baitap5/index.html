@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biểu mẫu Đặt Lịch</title>
+</head>
+<body>
+
+    <form action="/submit" method="post">
+        <label for="hoTen">Họ và tên:</label>
+        <input type="text" id="hoTen" name="hoTen" placeholder="Nhập họ và tên"><br>
+
+        <label for="ngayGio">Chọn ngày giờ:</label>
+        <input type="datetime-local" id="ngayGio" name="ngayGio"><br>
+
+        <label for="loaiDichVu">Loại dịch vụ:</label>
+        <select id="loaiDichVu" name="loaiDichVu">
+            <option value="tuVan">Tư vấn</option>
+            <option value="khamBenh">Khám bệnh</option>
+            <option value="dieuTri">Điều trị</option>
+        </select><br>
+
+        <label for="ghiChu">Ghi chú:</label>
+        <textarea id="ghiChu" name="ghiChu" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Đặt lịch">
+    </form>
+
+</body>
+</html>

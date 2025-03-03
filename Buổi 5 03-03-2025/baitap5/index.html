@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Groups of Selectors</title>
+<style>
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+.content {
+  background-color: #f5ecc081; 
+  padding: 20px;
+  border-left: 7px solid #FFEB3B;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  width: 1000px;
+  
+}
+pre {
+  background-color: #fbf7e481; 
+  padding: 5px;
+  border-radius: 3px;
+  overflow-x: auto;
+  
+}
+h2 {
+  color: #333; 
+  margin-bottom: 20px;
+}
+h3 {
+  color: #555; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  color: black;
+  font-size: 20px;"
+}
+pre {
+  color: black;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+
+<h1 style="color: #4285F4;">5. Groups of Selectors</h1>
+
+<p style="font-size: larger;" style="font-size: 20pxpx;">A comma-separated list of selectors represents the union of all elements selected by each of the individual <br> selectors in the list. (A comma is U+002C.) For example, in CSS when several selectors share the same <br> declarations, they may be grouped into a comma-separated list. White space may appear before and/or after the comma.</p>
+
+<div class="content">
+<h2>CSS example:</h2>
+
+<p>In this example, we condense three rules with identical declarations into one. Thus,</p>
+
+<pre>
+h1 { font-family: sans-serif }
+h2 { font-family: sans-serif }
+h3 { font-family: sans-serif }
+</pre>
+
+<p>is equivalent to:</p>
+
+<pre>
+h1, h2, h3 { font-family: sans-serif }
+</pre>
+</div>
+
+</body>
+</html>

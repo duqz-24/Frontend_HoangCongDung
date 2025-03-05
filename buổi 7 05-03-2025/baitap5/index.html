@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gói Cước 5G</title>
+    <script src="https://kit.fontawesome.com/b988688d95.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .package-card {
+            width: 320px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header {
+            background: red;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            font-size: 20px;
+            position: relative;
+        }
+        .hot-icon {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 50px;
+        }
+        .details {
+            padding: 15px;
+            text-align: left;
+        }
+        .details p {
+            margin: 8px 0;
+        }
+        .highlight {
+            color: orange;
+            font-weight: bold;
+        }
+        .buttons {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            padding: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .register {
+            background: linear-gradient(to right, #ff4b2b, #ff416c);
+        }
+        .detail {
+            background: white;
+            color: red;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="package-card">
+        <div class="header">5G160B
+            <img class="hot-icon" src="download-removebg-preview.png" alt="HOT">
+        </div>
+        <div class="details">
+            <p>Data: <span class="highlight">120Gb (4Gb/ ngày)</span></p>
+            <p>Giá: <span class="highlight">160.000 đ</span></p>
+            <p>Nội mạng: <span class="highlight">&lt;10 phút (tối đa 1000 phút/ 30 ngày)</span></p>
+            <p>Ngoại mạng: <span class="highlight">100 phút</span></p>
+            <p>Free data: <span class="highlight">TV360 Basic, 20Gb lưu trữ Mybox</span></p>
+            <p>Thời hạn: <span class="highlight">30 ngày</span></p>
+            <p>(Sử dụng 4Gb/ ngày)</p>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn register"><i class="fas fa-edit"></i> ĐĂNG KÝ</a>
+            <a href="#" class="btn detail"><i class="fas fa-info-circle"></i> Chi tiết</a>
+        </div>
+    </div>
+</body>
+</html>

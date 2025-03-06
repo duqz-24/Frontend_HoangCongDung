@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story</title>
+    <style>
+        .Margin{
+            margin-left: 20px;
+            width: 70%;
+            text-align: center;
+            display: flex;
+            border: 10px #333;
+            gap: 20px;
+            display: flex;
+            max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+            justify-content: space-around;
+ 
+        }
+        .title{
+            color: #4f4e4e;
+            font-size: 18px;
+        }
+        .body{
+            color: #4f4e4e;
+            font-size: 22px;
+            letter-spacing: 2px;
+            font-family:sans-serif;
+            border: 1px solid #333;
+            
+        }
+        .img{
+            width: 300px;
+            height: 100px;
+            object-fit: cover;
+            gap: 40px;
+        }
+        .button-container {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 20px; 
+        }
+
+        .full-story-button {
+            background-color: transparent; 
+            border: 1px solid #000;
+            padding: 10px 20px; 
+            font-size: 14px; 
+            font-weight: bold;
+        
+        }
+
+        .full-story-button:hover {
+            background-color: #f0f0f0; 
+        }
+        .content{
+            color: #4f4e4e;
+            font-size: 10px;
+            letter-spacing: 1px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 1px solid #333;
+            text-align: left;
+            border-spacing: 10px;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <table class="Margin">
+        <div>
+            <tr class="title">
+                <td>April 24, 2017</td>
+                <td>April 22, 2017</td>
+            </tr>
+            <tr class="body">
+                <td><strong>SED MAGNA <br> IPSUM FAUCIBUS</strong></td>
+                <td><strong>PRIMIS EGET <br> IMPERDIET LOREM</strong></td>
+            </tr>
+            <tr class="img">
+                <td><img src="images.jpg" alt="ảnh 1" ></td>
+                <td><img src="tải xuống.jpg" alt="ảnh 2"></td>
+            </tr>
+            <tr class="content">
+                <td>Donec eget ex magna. Interdum et malesuada fames ac <br> ante ipsum primis in faucibus. Pellentesque venenatis <br> dolor imperdiet dolor mattis sagittis 1  magna etiam.</td>
+                <td>Donec eget ex magna. Interdum et malesuada fames ac <br> ante ipsum primis in faucibus. Pellentesque venenatis <br> dolor imperdiet dolor mattis sagittis 2  magna etiam.</td>
+            </tr>
+            <tr>
+                <div class="button-container">
+                    <td><button class="full-story-button">FULL STORY</button></td>
+                    <td><button class="full-story-button">FULL STORY</button></td>
+
+                </div>
+            </tr>
+          
+
+        </div>
+    </table>
+    
+</body>
+</html>
+
+

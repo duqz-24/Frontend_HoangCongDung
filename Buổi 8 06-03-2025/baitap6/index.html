@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Input</title>
+    <style>
+        .input-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 5px 10px;
+            width: 300px; 
+            background-color: #f8f8f8; 
+        }
+
+        .input-container input[type="text"] {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+            padding: 5px;
+            background-color: transparent; 
+        }
+
+        .input-container img {
+            width: 20px; 
+            height: 20px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-container">
+        <img src="searchh.png" alt="Search"> 
+        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+        <img src="mic.png" alt="Mic">
+        <img src="tìm ảnh.png" alt="Camera">
+    </div>
+</body>
+</html>

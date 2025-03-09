@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog Cá Nhân</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; 
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.post h2 {
+  margin-bottom: 10px;
+}
+
+.post p {
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>MY BLOG</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Posts</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <aside class="sidebar">
+    <h2>Bài viết nổi bật</h2>
+    <div class="post">
+      <h3>Tiêu đề bài viết chính</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla eu lorem tincidunt tristique.</p>
+      <a href="#" class="read-more">Đọc Thêm</a>
+    </div>
+    <h2>Các bài viết khác</h2>
+    <div class="post">
+      <h3>Bài viết 1</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+    <div class="post">
+      <h3>Bài viết 2</h3>
+      <p>Ut nulla eu lorem tincidunt...</p>
+    </div>
+    <div class="post">
+      <h3>Bài viết 3</h3>
+      <p>Consectetur adipiscing elit...</p>
+    </div>
+  </aside>
+  <main class="content">
+    </main>
+</div>
+
+<footer class="footer">
+  <p>© 2023 My Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

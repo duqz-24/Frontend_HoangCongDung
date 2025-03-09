@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bố cục Cơ bản</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 150px 1fr; 
+  grid-template-rows: auto 1fr auto; 
+  height: 80vh;
+  width: 200vh; 
+}
+
+header {
+  grid-area: header;
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: #2ecc71;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  grid-area: content;
+  background-color: #e74c3c;
+  color: white;
+  padding: 20px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #9b59b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>Header</header>
+  <aside>Sidebar</aside>
+  <main>Content</main>
+  <footer>Footer</footer>
+</div>
+
+</body>
+</html>

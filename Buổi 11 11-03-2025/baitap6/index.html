@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+        .header, .content, .signup, .feature {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .header { background: #6aa9e9; }
+        .content { background: #dcdcdc; color: black; }
+        .signup { background: #a7c7f2; }
+        .feature:nth-child(1) { background: #f4c86a; }
+        .feature:nth-child(2) { background: #f39696; }
+        .feature:nth-child(3) { background: #bba4f3; }
+
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .feature {
+            flex: 1;
+            min-width: 100px;
+        }
+        
+   
+        @media (min-width: 768px) {
+            .features {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+      
+        @media (min-width: 1200px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            .features {
+                display: flex;
+            }
+            .features .feature {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">(HEADER)</div>
+        <div class="content">(CONTENT)</div>
+        <div class="signup">(SIGUP)</div>
+        <div class="features">
+            <div class="feature">(FEATURE)</div>
+            <div class="feature">(FEATURE)</div>
+            <div class="feature">(FEATURE)</div>
+        </div>
+        <div class="signup">(SIGN UP)</div>
+    </div>
+</body>
+</html>

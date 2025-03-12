@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+        .box1 {
+            background: #d6338445;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;   
+        }
+        .box2 {
+            background: #d6338482;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;   
+        }
+        .box3 {
+            background: #d63384c1;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;   
+        }
+        .box4 {
+            background: #d63384e3;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;   
+        }
+        .box5 {
+            background: #d63384;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;   
+        } 
+        .box6 {
+            background: #e34996;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;   
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+            }
+            .box:nth-child(1) {
+                grid-column: span 6;
+            }
+            .box:nth-child(2), .box:nth-child(3), .box:nth-child(4) {
+                grid-column: span 2;
+            }
+            .box:nth-child(5), .box:nth-child(6) {
+                grid-column: span 3;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .box:nth-child(1) {
+                grid-column: span 3;
+            }
+            .box:nth-child(2), .box:nth-child(3), .box:nth-child(4), .box:nth-child(5), .box:nth-child(6) {
+                grid-column: span 1;
+            }
+        }
+        @media (max-width: 767px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>

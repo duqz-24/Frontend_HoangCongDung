@@ -1,0 +1,5 @@
+let a = prompt("nhap so thu 1")
+let b = prompt("nhap so thu 2")
+let c = prompt("nhap so thu 3")
+let result = Math.max(a,b,c)
+alert(result)

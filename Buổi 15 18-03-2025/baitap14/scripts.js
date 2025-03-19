@@ -1,0 +1,10 @@
+let bankinh = parseInt(prompt("Nhập bán kính hình trụ:"));
+let chieucao = parseInt(prompt("Nhập chiều cao hình trụ:"));
+let dientichXungQuanh = 2 * Math.PI * bankinh * chieucao;
+let dientichToanPhan = dientichXungQuanh + 2 * Math.PI * bankinh * bankinh;
+let thetich = Math.PI * bankinh * bankinh * chieucao;
+let chuviDay = 2 * Math.PI * bankinh;
+console.log("Diện tích xung quanh hình trụ là:", dientichXungQuanh);
+console.log("Diện tích toàn phần hình trụ là:", dientichToanPhan);
+console.log("Thể tích hình trụ là:", thetich);
+console.log("Chu vi đáy hình trụ là:", chuviDay);
